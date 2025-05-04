@@ -12,7 +12,6 @@ inputs:
   lib-path:
     description: 'Path to the library directory'
     required: true
-    default: 'libs/${{ inputs.lib-name }}'
   lib-version:
     description: 'Version of the library to be deployed'
     required: true
