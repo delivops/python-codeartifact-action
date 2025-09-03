@@ -57,7 +57,7 @@ runs:
         VERSION=${{ inputs.lib-version }} python -m build
 
     - name: Configure AWS Credentials
-      uses: aws-actions/configure-aws-credentials@v4
+      uses: aws-actions/configure-aws-credentials@v5
       with:
         role-to-assume: "arn:aws:iam::${{ inputs.aws-account-id }}:role/${{ inputs.aws-role-name }}"
         aws-region: ${{ inputs.aws-region }}
